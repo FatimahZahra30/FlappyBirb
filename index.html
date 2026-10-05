@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>FIT2102 A1 2025</title>
+    </head>
+    <body>
+        <h1>Flappy Birb</h1>
+        <main id="main" class="flex col">
+            <svg id="svgCanvas" width="600" height="400">
+                <g id="gameOver" visibility="hidden">
+                    <image id="gameOverImg" href="assets/game_over.png" 
+                    x="50%" y="50%" width="900" height="340"
+                    transform="translate(-450,-170)"/>
+                </g>
+            </svg>
+            <div id="sideBar" class="flex col">
+                <div id="info" class="flex col">
+                    <div class="text">
+                        <span class="left">Lives: </span>
+                        <span class="right" id="livesText">...</span>
+                    </div>
+                    <div class="text">
+                        <span class="left">Score: </span>
+                        <span class="right" id="scoreText">...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./src/main.ts"></script>
+    </body>
+</html>
